@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    position: fixed;
+    background-color: rgb(21, 13, 106);
+    color: white;
+    padding: 15px;
+    z-index: 2;
+
+    width: 100%;
+
+}
+
+header p {
+    color: rgb(82, 82, 232);
+    opacity: 90%;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+header .issue {
+    position: relative;
+    left: 600px;
+    border: 1px solid;
+    width: fit-content;
+    padding: 9px;
+
+}
+
+.main-nav {
+
+    position: fixed;
+    background-color: rgb(58, 82, 234);
+    display: flex;
+    gap: 20px;
+    height: 30px;
+    align-items: center;
+
+    top: 120px;
+    width: 100%;
+    z-index: 2;
+
+}
+
+nav a {
+
+    text-decoration: none;
+    margin-left: 30px;
+    color: white;
+}
+
+
+main {
+    display: flex;
+
+    z-index: 1;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+
+
+
+[class="intro"] {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 15px;
+    gap: 20px;
+
+}
+
+.intro>.kicker {
+    color: blue;
+    font-size: 13px;
+
+}
+
+[class="news-card"] {
+    display: flex;
+
+    background-color: rgb(240, 244, 247);
+    width: 500px;
+    margin: 16px;
+    padding: 5px;
+
+}
+
+.news-card span {
+    margin: 0 15px;
+    color: dimgrey;
+    opacity: 90%;
+    font-size: 25px;
+}
+
+div>p {
+    color: dimgrey;
+    opacity: 90%;
+}
+
+.floating {
+    position: fixed;
+    bottom: 69px;
+    right: 3px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.chat {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 10px;
+    font-weight: 900;
+    box-shadow: 0 0 5px;
+    background-color: yellow;
+}
+
+.top-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 20px;
+    font-weight: 900;
+    box-shadow: 0 0 5px;
+    color: aliceblue;
+    background-color: rgb(8, 0, 255);
+}
+
+footer {
+    background: linear-gradient(to right,
+            red 0%,
+            blue 50%,
+            yellow 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 0 0 5px yellowgreen;
+}

@@ -1,0 +1,460 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: rgb(15, 43, 43);
+    color: azure;
+    padding: 15px;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    width: 100%;
+    z-index: 3;
+}
+
+header div {
+
+    display: flex;
+    flex-direction: column;
+}
+
+header span {
+    opacity: 60%;
+}
+
+header div:nth-child(2) {
+    position: relative;
+    left: 1000px;
+}
+
+nav {
+    top: 70px;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+
+    width: 100%;
+    background-color: rgb(253, 253, 31);
+    display: flex;
+    gap: 20px;
+    padding: 2px;
+}
+
+nav a {
+    text-decoration: none;
+    margin-left: 40px;
+    color: rgb(13, 27, 232);
+}
+
+[class="promo"] {
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    margin: 60px 50px;
+}
+
+.promo-bg {
+    z-index: 1;
+    position: absolute;
+    top: px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,
+            blue,
+            teal)
+}
+
+.promo-shape {
+    position: absolute;
+    z-index: 2;
+}
+
+.s1 {
+    width: 80px;
+    height: 80px;
+    background-color: yellow;
+    top: 130px;
+    left: 840px;
+    border-radius: 50%;
+}
+
+.s2 {
+    width: 180px;
+    height: 180px;
+    border: 20px solid white;
+    top: 250px;
+    left: 740px;
+    border-radius: 50%;
+    opacity: 50%;
+}
+
+[class="promo-text"] {
+    z-index: 2;
+    position: absolute;
+    top: 140px;
+    left: 100px;
+    line-height: 1.9;
+}
+
+.promo-text>p,
+h1 {
+    color: aliceblue;
+}
+
+.promo-text>p {
+    opacity: 50%;
+    ;
+}
+
+.promo-text>button {
+    background-color: yellow;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+[class="promo-label"] {
+    background-color: aliceblue;
+    position: absolute;
+    z-index: 2;
+    right: 10px;
+    top: 10px;
+    padding: 5px;
+    border-radius: 15px;
+}
+
+[class="section-title"] {
+    display: flex;
+    flex-direction: column;
+    margin: 60px 50px;
+
+
+}
+
+[class="section-title"]>p {
+    color: blue;
+}
+
+/* cha */
+
+[class="products"] {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 60px 50px;
+    gap: 60px;
+
+}
+
+[class="product"] {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: beige;
+    width: 300px;
+    height: 200px;
+    position: relative;
+}
+
+.p1>.dv1 {
+    background-color: black;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    width: 100px;
+    height: 60px;
+    border: 10px solid red;
+    z-index: 2;
+    border-radius: 5px;
+
+}
+
+.p2>.dv1 {
+    background-color: black;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    width: 100px;
+    height: 60px;
+    border: 10px solid red;
+    z-index: 2;
+    border-radius: 5px;
+}
+
+.p3>.dv1 {
+    background-color: black;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    width: 100px;
+    height: 60px;
+    border: 10px solid red;
+    z-index: 2;
+    border-radius: 5px;
+}
+
+.p4>.dv1 {
+    background-color: black;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    width: 100px;
+    height: 60px;
+    border: 10px solid red;
+    z-index: 2;
+    border-radius: 5px;
+}
+
+.p5>.dv1 {
+    background-color: black;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    width: 100px;
+    height: 60px;
+    border: 10px solid red;
+    z-index: 2;
+    border-radius: 5px;
+}
+
+.p6>.dv1 {
+    background-color: black;
+    position: absolute;
+    top: 20px;
+    left: 100px;
+    width: 100px;
+    height: 60px;
+    border: 10px solid red;
+    z-index: 2;
+    border-radius: 5px;
+}
+
+.p1>.dv2 {
+    background-color: rgb(167, 212, 244);
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    width: 250px;
+    height: 100px;
+    border-radius: 5px;
+
+    z-index: 1;
+
+}
+
+.p2>.dv2 {
+    background-color: rgb(167, 212, 244);
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    width: 250px;
+    height: 100px;
+    border-radius: 5px;
+
+    z-index: 1;
+}
+
+.p3>.dv2 {
+    background-color: rgb(167, 212, 244);
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    width: 250px;
+    height: 100px;
+    border-radius: 5px;
+
+    z-index: 1;
+}
+
+.p4>.dv2 {
+    background-color: rgb(167, 212, 244);
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    width: 250px;
+    height: 100px;
+    border-radius: 5px;
+
+    z-index: 1;
+}
+
+.p5>.dv2 {
+    background-color: rgb(167, 212, 244);
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    width: 250px;
+    height: 100px;
+    border-radius: 5px;
+
+    z-index: 1;
+}
+
+.p6>.dv2 {
+    background-color: rgb(167, 212, 244);
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    width: 250px;
+    height: 100px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+[class="badge"] {
+    background: linear-gradient(to right,
+
+            yellow);
+    width: fit-content;
+    padding: 1px;
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+}
+
+[class="badge sale"] {
+    background: linear-gradient(to right,
+            red,
+            yellow,
+            blue);
+    width: fit-content;
+    padding: 1px;
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+[class="badge new"] {
+    background: linear-gradient(to right,
+            red,
+            white);
+    width: fit-content;
+    padding: 1px;
+    z-index: 2;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+h3+p {
+    color: rgb(48, 5, 222);
+    opacity: 80%;
+}
+
+.pic+h3 {
+    color: blue;
+}
+
+strong {
+    color: rgb(226, 43, 43);
+}
+
+
+[ class="support"] {
+    position: fixed;
+    right: 10px;
+    bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 10px;
+
+}
+
+
+[ class="support"]>button:nth-child(1) {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: chocolate;
+    color: azure;
+
+
+
+}
+
+
+[ class="support"]>button:nth-child(2) {
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: chocolate;
+    color: azure;
+}
+
+
+
+[class="modal-layer"] {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.4);
+    top: 0;
+    right: 0;
+}
+
+
+[class="modal"] {
+    background: rgb(255, 255, 254);
+    width: 390px;
+    min-height: 70px;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    line-height: 1.8;
+    border-radius: 9px;
+    position: relative;
+    gap: 10px;
+
+}
+
+[ class="close"] {
+    width: fit-content;
+    position: absolute;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.mini {
+    color: blue;
+    font-size: 10px;
+}
+
+h2+p {
+    color: rgb(90, 126, 126);
+}
+
+[ class="claim"] {
+    width: fit-content;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 94px;
+    padding: 0 45px;
+    margin-bottom: 3px;
+    background-color: rgb(255, 220, 133);
+    font-weight: 900;
+
+}

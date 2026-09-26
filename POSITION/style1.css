@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(25, 25, 244);
+    color: aliceblue;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1px;
+    width: 100%;
+    height: 150px;
+
+
+}
+
+header * {
+    margin-left: 65px;
+}
+
+.eyebrow {
+    opacity: 50%;
+}
+
+.eyebrow1 {
+    opacity: 90%;
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    background-color: rgb(214, 231, 246);
+    height: 500px;
+
+}
+
+main section {
+    width: 80%;
+}
+
+.notice-box {
+    position: relative;
+    top: 10px;
+    left: 5px;
+
+
+    background-color: rgb(235, 239, 171);
+
+    border: 1px solid rgb(243, 212, 33)
+}
+
+[class*="lesson"] {
+    background-color: rgb(247, 247, 247);
+    box-shadow: 0 1px 2px rgb(116, 109, 109)
+}
+
+
+h2 {
+    color: rgb(47, 11, 229);
+
+}
+
+[class="tag-new"] {
+    background-color: red;
+    color: white;
+    position: relative;
+    top: -26px;
+    left: 230px
+}
